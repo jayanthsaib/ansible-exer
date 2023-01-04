@@ -1,0 +1,275 @@
+2023-01-04 06:56:54,257 p=24570 u=ubuntu n=ansible | PLAY [Provisioning Server] *****************************************************
+2023-01-04 06:56:54,271 p=24570 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2023-01-04 06:56:55,830 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:56:55,840 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:56:55,847 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:56:55,945 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:56:55,953 p=24570 u=ubuntu n=ansible | TASK [post-install : Install NTP on Centos] ************************************
+2023-01-04 06:56:56,106 p=24570 u=ubuntu n=ansible | skipping: [web03] => (item=ntp) 
+2023-01-04 06:56:56,111 p=24570 u=ubuntu n=ansible | skipping: [web03] => (item=wget) 
+2023-01-04 06:56:56,134 p=24570 u=ubuntu n=ansible | skipping: [web03] => (item=git) 
+2023-01-04 06:56:56,154 p=24570 u=ubuntu n=ansible | skipping: [web03] => (item=zip) 
+2023-01-04 06:56:56,168 p=24570 u=ubuntu n=ansible | skipping: [web03] => (item=unzip) 
+2023-01-04 06:56:56,890 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=ntp)
+2023-01-04 06:56:56,894 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=ntp)
+2023-01-04 06:56:56,897 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=ntp)
+2023-01-04 06:56:57,569 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=wget)
+2023-01-04 06:56:57,577 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=wget)
+2023-01-04 06:56:57,588 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=wget)
+2023-01-04 06:56:58,245 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=git)
+2023-01-04 06:56:58,249 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=git)
+2023-01-04 06:56:58,256 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=git)
+2023-01-04 06:56:58,929 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=zip)
+2023-01-04 06:56:58,936 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=zip)
+2023-01-04 06:56:58,941 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=zip)
+2023-01-04 06:56:59,608 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=unzip)
+2023-01-04 06:56:59,610 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=unzip)
+2023-01-04 06:56:59,628 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=unzip)
+2023-01-04 06:56:59,636 p=24570 u=ubuntu n=ansible | TASK [post-install : Install NTP on Ubuntu] ************************************
+2023-01-04 06:56:59,760 p=24570 u=ubuntu n=ansible | skipping: [web01] => (item=ntp) 
+2023-01-04 06:56:59,761 p=24570 u=ubuntu n=ansible | skipping: [web01] => (item=wget) 
+2023-01-04 06:56:59,764 p=24570 u=ubuntu n=ansible | skipping: [web01] => (item=git) 
+2023-01-04 06:56:59,768 p=24570 u=ubuntu n=ansible | skipping: [web01] => (item=zip) 
+2023-01-04 06:56:59,769 p=24570 u=ubuntu n=ansible | skipping: [web02] => (item=ntp) 
+2023-01-04 06:56:59,772 p=24570 u=ubuntu n=ansible | skipping: [web02] => (item=wget) 
+2023-01-04 06:56:59,773 p=24570 u=ubuntu n=ansible | skipping: [web01] => (item=unzip) 
+2023-01-04 06:56:59,776 p=24570 u=ubuntu n=ansible | skipping: [web02] => (item=git) 
+2023-01-04 06:56:59,780 p=24570 u=ubuntu n=ansible | skipping: [web02] => (item=zip) 
+2023-01-04 06:56:59,794 p=24570 u=ubuntu n=ansible | skipping: [web02] => (item=unzip) 
+2023-01-04 06:56:59,821 p=24570 u=ubuntu n=ansible | skipping: [db01] => (item=ntp) 
+2023-01-04 06:56:59,828 p=24570 u=ubuntu n=ansible | skipping: [db01] => (item=wget) 
+2023-01-04 06:56:59,838 p=24570 u=ubuntu n=ansible | skipping: [db01] => (item=git) 
+2023-01-04 06:56:59,844 p=24570 u=ubuntu n=ansible | skipping: [db01] => (item=zip) 
+2023-01-04 06:56:59,852 p=24570 u=ubuntu n=ansible | skipping: [db01] => (item=unzip) 
+2023-01-04 06:57:01,949 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=ntp)
+2023-01-04 06:57:03,846 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=wget)
+2023-01-04 06:57:05,750 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=git)
+2023-01-04 06:57:07,664 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=zip)
+2023-01-04 06:57:10,708 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=unzip)
+2023-01-04 06:57:10,722 p=24570 u=ubuntu n=ansible | TASK [post-install : Start & Enable NTP on Redhat] *****************************
+2023-01-04 06:57:10,870 p=24570 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 06:57:11,679 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:11,685 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:11,692 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:11,701 p=24570 u=ubuntu n=ansible | TASK [post-install : Start & Enable NTP on Debian] *****************************
+2023-01-04 06:57:11,768 p=24570 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 06:57:11,800 p=24570 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 06:57:11,838 p=24570 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 06:57:12,256 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:12,266 p=24570 u=ubuntu n=ansible | TASK [post-install : Add Group] ************************************************
+2023-01-04 06:57:12,914 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:12,944 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:12,947 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:12,949 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:12,960 p=24570 u=ubuntu n=ansible | TASK [post-install : Add users] ************************************************
+2023-01-04 06:57:13,757 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=user11)
+2023-01-04 06:57:13,807 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=user11)
+2023-01-04 06:57:13,811 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=user11)
+2023-01-04 06:57:13,813 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=user11)
+2023-01-04 06:57:14,222 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=user12)
+2023-01-04 06:57:14,354 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=user12)
+2023-01-04 06:57:14,360 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=user12)
+2023-01-04 06:57:14,365 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=user12)
+2023-01-04 06:57:14,583 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=user13)
+2023-01-04 06:57:14,848 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=user13)
+2023-01-04 06:57:14,857 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=user13)
+2023-01-04 06:57:14,868 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=user13)
+2023-01-04 06:57:14,956 p=24570 u=ubuntu n=ansible | ok: [web03] => (item=user14)
+2023-01-04 06:57:15,346 p=24570 u=ubuntu n=ansible | ok: [db01] => (item=user14)
+2023-01-04 06:57:15,357 p=24570 u=ubuntu n=ansible | ok: [web01] => (item=user14)
+2023-01-04 06:57:15,367 p=24570 u=ubuntu n=ansible | ok: [web02] => (item=user14)
+2023-01-04 06:57:15,375 p=24570 u=ubuntu n=ansible | TASK [post-install : Banner file /etc/motd] ************************************
+2023-01-04 06:57:16,546 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:16,557 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:16,558 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:16,561 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:16,573 p=24570 u=ubuntu n=ansible | TASK [post-install : Deploy NTP conf file for Redhat] **************************
+2023-01-04 06:57:16,716 p=24570 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 06:57:17,285 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:17,337 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:17,363 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:17,372 p=24570 u=ubuntu n=ansible | TASK [post-install : Deploy NTP conf file for Debian] **************************
+2023-01-04 06:57:17,445 p=24570 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 06:57:17,472 p=24570 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 06:57:17,591 p=24570 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 06:57:18,093 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:18,103 p=24570 u=ubuntu n=ansible | TASK [post-install : Dir for dev data] *****************************************
+2023-01-04 06:57:18,633 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:18,634 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:18,635 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:18,646 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:18,656 p=24570 u=ubuntu n=ansible | TASK [post-install : deploy dev data file] *************************************
+2023-01-04 06:57:19,576 p=24570 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 06:57:19,740 p=24570 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 06:57:19,752 p=24570 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 06:57:19,754 p=24570 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 06:57:19,759 p=24570 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2023-01-04 06:57:19,760 p=24570 u=ubuntu n=ansible | db01                       : ok=9    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-01-04 06:57:19,760 p=24570 u=ubuntu n=ansible | web01                      : ok=9    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-01-04 06:57:19,760 p=24570 u=ubuntu n=ansible | web02                      : ok=9    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-01-04 06:57:19,760 p=24570 u=ubuntu n=ansible | web03                      : ok=9    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-01-04 07:01:41,406 p=25222 u=ubuntu n=ansible | - downloading role 'java', owned by geerlingguy
+2023-01-04 07:01:44,798 p=25222 u=ubuntu n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/2.2.0.tar.gz
+2023-01-04 07:01:44,873 p=25222 u=ubuntu n=ansible | - extracting geerlingguy.java to /home/ubuntu/.ansible/roles/geerlingguy.java
+2023-01-04 07:01:44,877 p=25222 u=ubuntu n=ansible | - geerlingguy.java (2.2.0) was installed successfully
+2023-01-04 07:03:06,669 p=25230 u=ubuntu n=ansible | PLAY [Provisioning Server] *****************************************************
+2023-01-04 07:03:06,686 p=25230 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2023-01-04 07:03:08,266 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:03:08,276 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:03:08,282 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:03:08,380 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:03:08,389 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Include OS-specific variables for Fedora or FreeBSD.] ***
+2023-01-04 07:03:08,460 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:03:08,488 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:03:08,500 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:03:08,515 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:03:08,524 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Include version-specific variables for CentOS/RHEL.] ***
+2023-01-04 07:03:08,635 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:03:08,640 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:03:08,652 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:03:08,670 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:03:08,679 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Include version-specific variables for Ubuntu.] *******
+2023-01-04 07:03:08,749 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:03:08,776 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:03:08,805 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:03:08,811 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:03:08,820 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Include version-specific variables for Debian.] *******
+2023-01-04 07:03:08,929 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:03:08,930 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:03:08,956 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:03:08,967 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:03:08,975 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Define java_packages.] ********************************
+2023-01-04 07:03:09,086 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:03:09,088 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:03:09,111 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:03:09,126 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:03:09,134 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************
+2023-01-04 07:03:09,249 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:03:09,285 p=25230 u=ubuntu n=ansible | included: /home/ubuntu/.ansible/roles/geerlingguy.java/tasks/setup-RedHat.yml for web01, web02, db01
+2023-01-04 07:03:09,299 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Ensure Java is installed.] ****************************
+2023-01-04 07:03:28,960 p=25230 u=ubuntu n=ansible | changed: [db01]
+2023-01-04 07:03:30,262 p=25230 u=ubuntu n=ansible | changed: [web01]
+2023-01-04 07:03:30,331 p=25230 u=ubuntu n=ansible | changed: [web02]
+2023-01-04 07:03:30,341 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************
+2023-01-04 07:03:30,408 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:03:30,436 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:03:30,467 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:03:30,479 p=25230 u=ubuntu n=ansible | included: /home/ubuntu/.ansible/roles/geerlingguy.java/tasks/setup-Debian.yml for web03
+2023-01-04 07:03:30,498 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Ensure 'man' directory exists.] ***********************
+2023-01-04 07:03:30,940 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:03:30,953 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Ensure Java is installed.] ****************************
+2023-01-04 07:04:20,063 p=25230 u=ubuntu n=ansible | changed: [web03]
+2023-01-04 07:04:20,071 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : include_tasks] ****************************************
+2023-01-04 07:04:20,145 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:04:20,180 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:04:20,191 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:04:20,207 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:04:20,218 p=25230 u=ubuntu n=ansible | TASK [geerlingguy.java : Set JAVA_HOME if configured.] *************************
+2023-01-04 07:04:20,293 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:04:20,328 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:04:20,337 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:04:20,353 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:04:20,363 p=25230 u=ubuntu n=ansible | TASK [post-install : Install NTP on Centos] ************************************
+2023-01-04 07:04:20,528 p=25230 u=ubuntu n=ansible | skipping: [web03] => (item=ntp) 
+2023-01-04 07:04:20,538 p=25230 u=ubuntu n=ansible | skipping: [web03] => (item=wget) 
+2023-01-04 07:04:20,555 p=25230 u=ubuntu n=ansible | skipping: [web03] => (item=git) 
+2023-01-04 07:04:20,573 p=25230 u=ubuntu n=ansible | skipping: [web03] => (item=zip) 
+2023-01-04 07:04:20,594 p=25230 u=ubuntu n=ansible | skipping: [web03] => (item=unzip) 
+2023-01-04 07:04:21,114 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=ntp)
+2023-01-04 07:04:21,386 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=ntp)
+2023-01-04 07:04:21,523 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=ntp)
+2023-01-04 07:04:21,651 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=wget)
+2023-01-04 07:04:21,944 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=wget)
+2023-01-04 07:04:22,077 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=wget)
+2023-01-04 07:04:22,206 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=git)
+2023-01-04 07:04:22,497 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=git)
+2023-01-04 07:04:22,629 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=git)
+2023-01-04 07:04:22,743 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=zip)
+2023-01-04 07:04:23,053 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=zip)
+2023-01-04 07:04:23,211 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=zip)
+2023-01-04 07:04:23,309 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=unzip)
+2023-01-04 07:04:23,590 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=unzip)
+2023-01-04 07:04:23,752 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=unzip)
+2023-01-04 07:04:23,765 p=25230 u=ubuntu n=ansible | TASK [post-install : Install NTP on Ubuntu] ************************************
+2023-01-04 07:04:23,887 p=25230 u=ubuntu n=ansible | skipping: [web01] => (item=ntp) 
+2023-01-04 07:04:23,900 p=25230 u=ubuntu n=ansible | skipping: [web01] => (item=wget) 
+2023-01-04 07:04:23,901 p=25230 u=ubuntu n=ansible | skipping: [web01] => (item=git) 
+2023-01-04 07:04:23,902 p=25230 u=ubuntu n=ansible | skipping: [web01] => (item=zip) 
+2023-01-04 07:04:23,902 p=25230 u=ubuntu n=ansible | skipping: [web02] => (item=ntp) 
+2023-01-04 07:04:23,902 p=25230 u=ubuntu n=ansible | skipping: [web02] => (item=wget) 
+2023-01-04 07:04:23,903 p=25230 u=ubuntu n=ansible | skipping: [web01] => (item=unzip) 
+2023-01-04 07:04:23,904 p=25230 u=ubuntu n=ansible | skipping: [web02] => (item=git) 
+2023-01-04 07:04:23,910 p=25230 u=ubuntu n=ansible | skipping: [web02] => (item=zip) 
+2023-01-04 07:04:23,921 p=25230 u=ubuntu n=ansible | skipping: [web02] => (item=unzip) 
+2023-01-04 07:04:23,954 p=25230 u=ubuntu n=ansible | skipping: [db01] => (item=ntp) 
+2023-01-04 07:04:23,959 p=25230 u=ubuntu n=ansible | skipping: [db01] => (item=wget) 
+2023-01-04 07:04:23,968 p=25230 u=ubuntu n=ansible | skipping: [db01] => (item=git) 
+2023-01-04 07:04:23,976 p=25230 u=ubuntu n=ansible | skipping: [db01] => (item=zip) 
+2023-01-04 07:04:23,986 p=25230 u=ubuntu n=ansible | skipping: [db01] => (item=unzip) 
+2023-01-04 07:04:26,144 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=ntp)
+2023-01-04 07:04:28,006 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=wget)
+2023-01-04 07:04:29,924 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=git)
+2023-01-04 07:04:31,806 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=zip)
+2023-01-04 07:04:33,675 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=unzip)
+2023-01-04 07:04:33,688 p=25230 u=ubuntu n=ansible | TASK [post-install : Start & Enable NTP on Redhat] *****************************
+2023-01-04 07:04:33,836 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:04:34,637 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:34,648 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:34,657 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:34,667 p=25230 u=ubuntu n=ansible | TASK [post-install : Start & Enable NTP on Debian] *****************************
+2023-01-04 07:04:34,740 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:04:34,769 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:04:34,809 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:04:35,251 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:35,260 p=25230 u=ubuntu n=ansible | TASK [post-install : Add Group] ************************************************
+2023-01-04 07:04:35,919 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:35,957 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:35,959 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:35,963 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:35,974 p=25230 u=ubuntu n=ansible | TASK [post-install : Add users] ************************************************
+2023-01-04 07:04:36,798 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=user11)
+2023-01-04 07:04:36,813 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=user11)
+2023-01-04 07:04:36,819 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=user11)
+2023-01-04 07:04:36,828 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=user11)
+2023-01-04 07:04:37,268 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=user12)
+2023-01-04 07:04:37,352 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=user12)
+2023-01-04 07:04:37,352 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=user12)
+2023-01-04 07:04:37,367 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=user12)
+2023-01-04 07:04:37,687 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=user13)
+2023-01-04 07:04:37,866 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=user13)
+2023-01-04 07:04:37,873 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=user13)
+2023-01-04 07:04:37,888 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=user13)
+2023-01-04 07:04:38,029 p=25230 u=ubuntu n=ansible | ok: [web03] => (item=user14)
+2023-01-04 07:04:38,368 p=25230 u=ubuntu n=ansible | ok: [web02] => (item=user14)
+2023-01-04 07:04:38,391 p=25230 u=ubuntu n=ansible | ok: [web01] => (item=user14)
+2023-01-04 07:04:38,392 p=25230 u=ubuntu n=ansible | ok: [db01] => (item=user14)
+2023-01-04 07:04:38,402 p=25230 u=ubuntu n=ansible | TASK [post-install : Banner file /etc/motd] ************************************
+2023-01-04 07:04:39,436 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:39,439 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:39,444 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:39,461 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:39,471 p=25230 u=ubuntu n=ansible | TASK [post-install : Deploy NTP conf file for Redhat] **************************
+2023-01-04 07:04:39,612 p=25230 u=ubuntu n=ansible | skipping: [web03]
+2023-01-04 07:04:40,193 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:40,242 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:40,268 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:40,277 p=25230 u=ubuntu n=ansible | TASK [post-install : Deploy NTP conf file for Debian] **************************
+2023-01-04 07:04:40,345 p=25230 u=ubuntu n=ansible | skipping: [web01]
+2023-01-04 07:04:40,376 p=25230 u=ubuntu n=ansible | skipping: [web02]
+2023-01-04 07:04:40,414 p=25230 u=ubuntu n=ansible | skipping: [db01]
+2023-01-04 07:04:40,929 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:40,939 p=25230 u=ubuntu n=ansible | TASK [post-install : Dir for dev data] *****************************************
+2023-01-04 07:04:41,399 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:41,438 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:41,451 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:41,474 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:41,483 p=25230 u=ubuntu n=ansible | TASK [post-install : deploy dev data file] *************************************
+2023-01-04 07:04:42,427 p=25230 u=ubuntu n=ansible | ok: [web01]
+2023-01-04 07:04:42,550 p=25230 u=ubuntu n=ansible | ok: [web02]
+2023-01-04 07:04:42,552 p=25230 u=ubuntu n=ansible | ok: [db01]
+2023-01-04 07:04:42,560 p=25230 u=ubuntu n=ansible | ok: [web03]
+2023-01-04 07:04:42,563 p=25230 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2023-01-04 07:04:42,563 p=25230 u=ubuntu n=ansible | db01                       : ok=13   changed=1    unreachable=0    failed=0    skipped=9    rescued=0    ignored=0   
+2023-01-04 07:04:42,563 p=25230 u=ubuntu n=ansible | web01                      : ok=13   changed=1    unreachable=0    failed=0    skipped=9    rescued=0    ignored=0   
+2023-01-04 07:04:42,564 p=25230 u=ubuntu n=ansible | web02                      : ok=13   changed=1    unreachable=0    failed=0    skipped=9    rescued=0    ignored=0   
+2023-01-04 07:04:42,564 p=25230 u=ubuntu n=ansible | web03                      : ok=15   changed=1    unreachable=0    failed=0    skipped=8    rescued=0    ignored=0   

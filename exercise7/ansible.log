@@ -1,0 +1,216 @@
+2022-12-28 08:51:42,497 p=18055 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-28 08:51:42,508 p=18055 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-28 08:51:43,763 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:43,774 p=18055 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-28 08:51:44,499 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:44,509 p=18055 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-28 08:51:45,044 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:45,053 p=18055 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-28 08:51:45,718 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:45,728 p=18055 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-28 08:51:46,145 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:46,153 p=18055 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-28 08:51:46,574 p=18055 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to
+u'********' (type string). If this does not look like what you expect, quote
+the entire value to ensure it does not change.
+
+2022-12-28 08:51:46,574 p=18055 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-28 08:51:46,575 p=18055 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:51:46,578 p=18055 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-28 08:51:46,579 p=18055 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-28 08:53:41,171 p=18131 u=ubuntu n=ansible | ansible-playbook 2.9.27
+  config file = /home/ubuntu/vprofile/exercise5/ansible.cfg
+  configured module search path = [u'/home/ubuntu/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Nov 28 2022, 18:51:39) [GCC 7.5.0]
+2022-12-28 08:53:41,171 p=18131 u=ubuntu n=ansible | Using /home/ubuntu/vprofile/exercise5/ansible.cfg as config file
+2022-12-28 08:53:41,417 p=18131 u=ubuntu n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2022-12-28 08:53:41,417 p=18131 u=ubuntu n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2022-12-28 08:53:41,417 p=18131 u=ubuntu n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2022-12-28 08:53:41,418 p=18131 u=ubuntu n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2022-12-28 08:53:41,418 p=18131 u=ubuntu n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2022-12-28 08:53:41,418 p=18131 u=ubuntu n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2022-12-28 08:53:41,418 p=18131 u=ubuntu n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2022-12-28 08:53:41,419 p=18131 u=ubuntu n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-12-28 08:53:41,419 p=18131 u=ubuntu n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2022-12-28 08:53:41,419 p=18131 u=ubuntu n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-12-28 08:53:41,419 p=18131 u=ubuntu n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2022-12-28 08:53:41,419 p=18131 u=ubuntu n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2022-12-28 08:53:41,420 p=18131 u=ubuntu n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2022-12-28 08:53:41,420 p=18131 u=ubuntu n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2022-12-28 08:53:41,420 p=18131 u=ubuntu n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2022-12-28 08:53:41,420 p=18131 u=ubuntu n=ansible | PLAYBOOK: db.yaml **************************************************************
+2022-12-28 08:53:41,420 p=18131 u=ubuntu n=ansible | 1 plays in db.yaml
+2022-12-28 08:53:41,423 p=18131 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-28 08:53:41,435 p=18131 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-28 08:53:42,687 p=18131 u=ubuntu n=ansible | ok: [db01]
+2022-12-28 08:53:42,688 p=18131 u=ubuntu n=ansible | META: ran handlers
+2022-12-28 08:53:42,698 p=18131 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-28 08:53:43,408 p=18131 u=ubuntu n=ansible | ok: [db01] => {"changed": false, "msg": "", "rc": 0, "results": ["1:mariadb-server-5.5.68-1.el7.x86_64 providing mariadb-server is already installed"]}
+2022-12-28 08:53:43,418 p=18131 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-28 08:53:43,961 p=18131 u=ubuntu n=ansible | ok: [db01] => {"changed": false, "msg": "", "rc": 0, "results": ["MySQL-python-1.2.5-1.el7.x86_64 providing MySQL-python is already installed"]}
+2022-12-28 08:53:43,969 p=18131 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-28 08:53:44,647 p=18131 u=ubuntu n=ansible | ok: [db01] => {"changed": false, "enabled": true, "name": "mariadb", "state": "started", "status": {"ActiveEnterTimestamp": "Mon 2022-12-26 07:00:59 UTC", "ActiveEnterTimestampMonotonic": "53208318047", "ActiveExitTimestampMonotonic": "0", "ActiveState": "active", "After": "network.target syslog.target basic.target tmp.mount system.slice systemd-journald.socket -.mount", "AllowIsolate": "no", "AmbientCapabilities": "0", "AssertResult": "yes", "AssertTimestamp": "Mon 2022-12-26 07:00:55 UTC", "AssertTimestampMonotonic": "53204916725", "Before": "shutdown.target multi-user.target", "BlockIOAccounting": "no", "BlockIOWeight": "18446744073709551615", "CPUAccounting": "no", "CPUQuotaPerSecUSec": "infinity", "CPUSchedulingPolicy": "0", "CPUSchedulingPriority": "0", "CPUSchedulingResetOnFork": "no", "CPUShares": "18446744073709551615", "CanIsolate": "no", "CanReload": "no", "CanStart": "yes", "CanStop": "yes", "CapabilityBoundingSet": "18446744073709551615", "CollectMode": "inactive", "ConditionResult": "yes", "ConditionTimestamp": "Mon 2022-12-26 07:00:55 UTC", "ConditionTimestampMonotonic": "53204916724", "Conflicts": "shutdown.target", "ControlGroup": "/system.slice/mariadb.service", "ControlPID": "0", "DefaultDependencies": "yes", "Delegate": "no", "Description": "MariaDB database server", "DevicePolicy": "auto", "ExecMainCode": "0", "ExecMainExitTimestampMonotonic": "0", "ExecMainPID": "2824", "ExecMainStartTimestamp": "Mon 2022-12-26 07:00:57 UTC", "ExecMainStartTimestampMonotonic": "53206261760", "ExecMainStatus": "0", "ExecStart": "{ path=/usr/bin/mysqld_safe ; argv[]=/usr/bin/mysqld_safe --basedir=/usr ; ignore_errors=no ; start_time=[Mon 2022-12-26 07:00:57 UTC] ; stop_time=[n/a] ; pid=2824 ; code=(null) ; status=0/0 }", "ExecStartPost": "{ path=/usr/libexec/mariadb-wait-ready ; argv[]=/usr/libexec/mariadb-wait-ready $MAINPID ; ignore_errors=no ; start_time=[Mon 2022-12-26 07:00:57 UTC] ; stop_time=[Mon 2022-12-26 07:00:59 UTC] ; pid=2825 ; code=exited ; status=0 }", "ExecStartPre": "{ path=/usr/libexec/mariadb-prepare-db-dir ; argv[]=/usr/libexec/mariadb-prepare-db-dir %n ; ignore_errors=no ; start_time=[Mon 2022-12-26 07:00:55 UTC] ; stop_time=[Mon 2022-12-26 07:00:57 UTC] ; pid=2742 ; code=exited ; status=0 }", "FailureAction": "none", "FileDescriptorStoreMax": "0", "FragmentPath": "/usr/lib/systemd/system/mariadb.service", "Group": "mysql", "GuessMainPID": "yes", "IOScheduling": "0", "Id": "mariadb.service", "IgnoreOnIsolate": "no", "IgnoreOnSnapshot": "no", "IgnoreSIGPIPE": "yes", "InactiveEnterTimestampMonotonic": "0", "InactiveExitTimestamp": "Mon 2022-12-26 07:00:55 UTC", "InactiveExitTimestampMonotonic": "53204917813", "JobTimeoutAction": "none", "JobTimeoutUSec": "0", "KillMode": "control-group", "KillSignal": "15", "LimitAS": "18446744073709551615", "LimitCORE": "18446744073709551615", "LimitCPU": "18446744073709551615", "LimitDATA": "18446744073709551615", "LimitFSIZE": "18446744073709551615", "LimitLOCKS": "18446744073709551615", "LimitMEMLOCK": "65536", "LimitMSGQUEUE": "819200", "LimitNICE": "0", "LimitNOFILE": "4096", "LimitNPROC": "3757", "LimitRSS": "18446744073709551615", "LimitRTPRIO": "0", "LimitRTTIME": "18446744073709551615", "LimitSIGPENDING": "3757", "LimitSTACK": "18446744073709551615", "LoadState": "loaded", "MainPID": "2824", "MemoryAccounting": "no", "MemoryCurrent": "18446744073709551615", "MemoryLimit": "18446744073709551615", "MountFlags": "0", "Names": "mariadb.service", "NeedDaemonReload": "no", "Nice": "0", "NoNewPrivileges": "no", "NonBlocking": "no", "NotifyAccess": "none", "OOMScoreAdjust": "0", "OnFailureJobMode": "replace", "PermissionsStartOnly": "no", "PrivateDevices": "no", "PrivateNetwork": "no", "PrivateTmp": "yes", "ProtectHome": "no", "ProtectSystem": "no", "RefuseManualStart": "no", "RefuseManualStop": "no", "RemainAfterExit": "no", "Requires": "system.slice basic.target -.mount", "RequiresMountsFor": "/var/tmp", "Restart": "no", "RestartUSec": "100ms", "Result": "success", "RootDirectoryStartOnly": "no", "RuntimeDirectoryMode": "0755", "SameProcessGroup": "no", "SecureBits": "0", "SendSIGHUP": "no", "SendSIGKILL": "yes", "Slice": "system.slice", "StandardError": "inherit", "StandardInput": "null", "StandardOutput": "journal", "StartLimitAction": "none", "StartLimitBurst": "5", "StartLimitInterval": "10000000", "StartupBlockIOWeight": "18446744073709551615", "StartupCPUShares": "18446744073709551615", "StatusErrno": "0", "StopWhenUnneeded": "no", "SubState": "running", "SyslogLevelPrefix": "yes", "SyslogPriority": "30", "SystemCallErrorNumber": "0", "TTYReset": "no", "TTYVHangup": "no", "TTYVTDisallocate": "no", "TasksAccounting": "no", "TasksCurrent": "18446744073709551615", "TasksMax": "18446744073709551615", "TimeoutStartUSec": "5min", "TimeoutStopUSec": "5min", "TimerSlackNSec": "50000", "Transient": "no", "Type": "simple", "UMask": "0022", "UnitFilePreset": "disabled", "UnitFileState": "enabled", "User": "mysql", "WantedBy": "multi-user.target", "WatchdogTimestamp": "Mon 2022-12-26 07:00:57 UTC", "WatchdogTimestampMonotonic": "53206261803", "WatchdogUSec": "0"}}
+2022-12-28 08:53:44,657 p=18131 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-28 08:53:45,082 p=18131 u=ubuntu n=ansible | ok: [db01] => {"changed": false, "db": "accounts", "db_list": ["accounts"]}
+2022-12-28 08:53:45,091 p=18131 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-28 08:53:45,519 p=18131 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to
+u'********' (type string). If this does not look like what you expect, quote
+the entire value to ensure it does not change.
+
+2022-12-28 08:53:45,519 p=18131 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-28 08:53:45,520 p=18131 u=ubuntu n=ansible | ok: [db01] => {"changed": false, "msg": "User unchanged", "user": "admin"}
+2022-12-28 08:53:45,522 p=18131 u=ubuntu n=ansible | META: ran handlers
+2022-12-28 08:53:45,523 p=18131 u=ubuntu n=ansible | META: ran handlers
+2022-12-28 08:53:45,524 p=18131 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-28 08:53:45,524 p=18131 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-29 06:22:34,305 p=20501 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-29 06:22:34,316 p=20501 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-29 06:22:35,589 p=20501 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:35,600 p=20501 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-29 06:22:36,299 p=20501 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:36,308 p=20501 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-29 06:22:36,846 p=20501 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:36,855 p=20501 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-29 06:22:37,515 p=20501 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:37,524 p=20501 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-29 06:22:37,950 p=20501 u=ubuntu n=ansible | changed: [db01]
+2022-12-29 06:22:37,958 p=20501 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-29 06:22:38,393 p=20501 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-29 06:22:38,394 p=20501 u=ubuntu n=ansible | changed: [db01]
+2022-12-29 06:22:38,397 p=20501 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-29 06:22:38,397 p=20501 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-29 06:22:54,465 p=20569 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-29 06:22:54,476 p=20569 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-29 06:22:55,350 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:55,359 p=20569 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-29 06:22:56,064 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:56,073 p=20569 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-29 06:22:56,615 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:56,625 p=20569 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-29 06:22:57,291 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:57,300 p=20569 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-29 06:22:57,732 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:57,741 p=20569 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-29 06:22:58,185 p=20569 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-29 06:22:58,185 p=20569 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:22:58,189 p=20569 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-29 06:22:58,189 p=20569 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-29 06:25:40,165 p=20724 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ubuntu/vprofile/exercise6/db.yaml': line 39, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+                    name: "{{dbuser}}"
+g                   password: "{{dbpass}}"
+^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2022-12-29 06:26:24,282 p=20732 u=ubuntu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ubuntu/vprofile/exercise6/db.yaml': line 39, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+                    name: "{{dbuser}}"
+g                   password: "{{dbpass}}"
+^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2022-12-29 06:27:50,810 p=20741 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-29 06:27:50,822 p=20741 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-29 06:27:52,094 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:52,105 p=20741 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:27:52,131 p=20741 u=ubuntu n=ansible | ok: [db01] => {
+    "dbname": "groups"
+}
+2022-12-29 06:27:52,140 p=20741 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:27:52,165 p=20741 u=ubuntu n=ansible | ok: [db01] => {
+    "msg": "value of dbuser is devops"
+}
+2022-12-29 06:27:52,174 p=20741 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-29 06:27:52,876 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:52,885 p=20741 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-29 06:27:53,429 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:53,438 p=20741 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-29 06:27:54,102 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:54,111 p=20741 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-29 06:27:54,545 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:54,555 p=20741 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-29 06:27:54,998 p=20741 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-29 06:27:54,998 p=20741 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:27:55,002 p=20741 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-29 06:27:55,002 p=20741 u=ubuntu n=ansible | db01                       : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-29 06:31:37,059 p=20826 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-29 06:31:37,071 p=20826 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-29 06:31:38,318 p=20826 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:31:38,329 p=20826 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:31:38,355 p=20826 u=ubuntu n=ansible | ok: [db01] => {
+    "dbname": "VARIABLE IS NOT DEFINED!"
+}
+2022-12-29 06:31:38,364 p=20826 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:31:38,387 p=20826 u=ubuntu n=ansible | fatal: [db01]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dbuser' is undefined\n\nThe error appears to be in '/home/ubuntu/vprofile/exercise7/db.yaml': line 14, column 13, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n                    var: dbname\n          - debug:\n            ^ here\n"}
+2022-12-29 06:31:38,390 p=20826 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-29 06:31:38,390 p=20826 u=ubuntu n=ansible | db01                       : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-12-29 06:34:05,292 p=20859 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************
+2022-12-29 06:34:05,304 p=20859 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-29 06:34:06,566 p=20859 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:34:06,577 p=20859 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:34:06,604 p=20859 u=ubuntu n=ansible | ok: [db01] => {
+    "dbname": "redhat"
+}
+2022-12-29 06:34:06,612 p=20859 u=ubuntu n=ansible | TASK [debug] *******************************************************************
+2022-12-29 06:34:06,639 p=20859 u=ubuntu n=ansible | ok: [db01] => {
+    "msg": "value of dbuser is testadmin"
+}
+2022-12-29 06:34:06,646 p=20859 u=ubuntu n=ansible | TASK [Install MYSQL server] ****************************************************
+2022-12-29 06:34:07,362 p=20859 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:34:07,371 p=20859 u=ubuntu n=ansible | TASK [Install python MySQL] ****************************************************
+2022-12-29 06:34:07,922 p=20859 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:34:07,931 p=20859 u=ubuntu n=ansible | TASK [Start & Enable MariaDB server] *******************************************
+2022-12-29 06:34:08,604 p=20859 u=ubuntu n=ansible | ok: [db01]
+2022-12-29 06:34:08,614 p=20859 u=ubuntu n=ansible | TASK [Create a new database with name 'Accounts'] ******************************
+2022-12-29 06:34:09,056 p=20859 u=ubuntu n=ansible | changed: [db01]
+2022-12-29 06:34:09,066 p=20859 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************
+2022-12-29 06:34:09,513 p=20859 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-12-29 06:34:09,514 p=20859 u=ubuntu n=ansible | changed: [db01]
+2022-12-29 06:34:09,517 p=20859 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-12-29 06:34:09,518 p=20859 u=ubuntu n=ansible | db01                       : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
